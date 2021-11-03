@@ -1,0 +1,12 @@
+E:\Desenvolvimento\Sinqia\Movimentos_Manuais\src\1-Core\MovimentosManuais.Domain\bin\Debug\net5.0\MovimentosManuais.Domain.deps.json
+E:\Desenvolvimento\Sinqia\Movimentos_Manuais\src\1-Core\MovimentosManuais.Domain\bin\Debug\net5.0\MovimentosManuais.Domain.dll
+E:\Desenvolvimento\Sinqia\Movimentos_Manuais\src\1-Core\MovimentosManuais.Domain\bin\Debug\net5.0\ref\MovimentosManuais.Domain.dll
+E:\Desenvolvimento\Sinqia\Movimentos_Manuais\src\1-Core\MovimentosManuais.Domain\bin\Debug\net5.0\MovimentosManuais.Domain.pdb
+E:\Desenvolvimento\Sinqia\Movimentos_Manuais\src\1-Core\MovimentosManuais.Domain\obj\Debug\net5.0\MovimentosManuais.Domain.csproj.AssemblyReference.cache
+E:\Desenvolvimento\Sinqia\Movimentos_Manuais\src\1-Core\MovimentosManuais.Domain\obj\Debug\net5.0\MovimentosManuais.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Desenvolvimento\Sinqia\Movimentos_Manuais\src\1-Core\MovimentosManuais.Domain\obj\Debug\net5.0\MovimentosManuais.Domain.AssemblyInfoInputs.cache
+E:\Desenvolvimento\Sinqia\Movimentos_Manuais\src\1-Core\MovimentosManuais.Domain\obj\Debug\net5.0\MovimentosManuais.Domain.AssemblyInfo.cs
+E:\Desenvolvimento\Sinqia\Movimentos_Manuais\src\1-Core\MovimentosManuais.Domain\obj\Debug\net5.0\MovimentosManuais.Domain.csproj.CoreCompileInputs.cache
+E:\Desenvolvimento\Sinqia\Movimentos_Manuais\src\1-Core\MovimentosManuais.Domain\obj\Debug\net5.0\MovimentosManuais.Domain.dll
+E:\Desenvolvimento\Sinqia\Movimentos_Manuais\src\1-Core\MovimentosManuais.Domain\obj\Debug\net5.0\ref\MovimentosManuais.Domain.dll
+E:\Desenvolvimento\Sinqia\Movimentos_Manuais\src\1-Core\MovimentosManuais.Domain\obj\Debug\net5.0\MovimentosManuais.Domain.pdb

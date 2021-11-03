@@ -1,0 +1,17 @@
+
+<h2>Deletar Movimentação</h2>
+
+<div mat-dialog-content>
+    <div style="height: 30px;">Deseja realmente deletar esta movimentação?</div>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button style="color: white; background-color: #b71c1c;" (click)="deletarMovimentacao()">Confirmar</button>
+    <button mat-stroked-button color="primary" (click)="functionFecharModal()">Cancelar</button>
+    <div style="margin-left: 1%;">
+        <label style="color: firebrick;">{{ErroValidacao}}</label>
+    </div>
+</div>
+<br><br>
+<div>
+    <mat-progress-bar mode="indeterminate" *ngIf="progressBar3" style="margin:0 auto;"></mat-progress-bar>
+</div>

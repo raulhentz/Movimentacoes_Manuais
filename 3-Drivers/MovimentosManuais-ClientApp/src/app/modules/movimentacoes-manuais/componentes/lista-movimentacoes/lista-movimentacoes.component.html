@@ -1,0 +1,108 @@
+
+<ng-template let-data #template>
+  <app-form-movimentacoes [functionFecharModal]="fechandoModal" [movimentacaoId]="chaveMovimentacao"></app-form-movimentacoes>
+</ng-template>
+
+<ng-template let-data #templateExclusao>
+  <app-exclusao-movimentacao [functionFecharModal]="fechandoModal" [movimentacaoId]="chaveMovimentacao"></app-exclusao-movimentacao>
+</ng-template>
+
+
+
+<mat-card class="container-card">
+    <mat-card-header>
+        <mat-card-title><h1>Movimentações Manuais</h1></mat-card-title>
+        <div style="position: absolute; right: 25px;">
+            <button mat-mini-fab color="primary" (click)="openDialog(template, false)">
+                <mat-icon>add</mat-icon>
+            </button>
+        </div>
+    </mat-card-header>
+</mat-card>
+
+<mat-progress-spinner mode="indeterminate" *ngIf="progressBar" style="margin:0 auto;"></mat-progress-spinner>
+
+<div class="botao-accordion">&nbsp;</div>
+
+<mat-accordion class="headers-align" multi>
+    <mat-expansion-panel [expanded]="panelOpenState">
+        <mat-expansion-panel-header>
+            <mat-panel-title><h3><b>Lista de Movimentações</b></h3></mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <mat-form-field>
+            <mat-label>Filtro</mat-label>
+            <input matInput (keyup)="aplicarFiltroLista($event)" placeholder="Buscar" #input>
+        </mat-form-field>
+
+        <div class="mat-elevation-z8">
+            <table mat-table [dataSource]="dataSource" matSort>
+          
+              <ng-container matColumnDef="NumeroLancamento">
+                <th mat-header-cell style="width: 10%;" *matHeaderCellDef mat-sort-header> NR Lançamento </th>
+                <td mat-cell style="width: 10%;" *matCellDef="let row"> {{row.numeroLancamento}} </td>
+              </ng-container>
+          
+              <ng-container matColumnDef="Mes">
+                <th mat-header-cell style="width: 5%;" *matHeaderCellDef mat-sort-header> Mês </th>
+                <td mat-cell style="width: 5%;" *matCellDef="let row"> {{row.mes}} </td>
+              </ng-container>
+          
+              <ng-container matColumnDef="Ano">
+                <th mat-header-cell style="width: 10%;" *matHeaderCellDef mat-sort-header> Ano </th>
+                <td mat-cell style="width: 10%;" *matCellDef="let row"> {{row.ano}} </td>
+              </ng-container>
+          
+              <ng-container matColumnDef="CodigoProduto">
+                <th mat-header-cell style="width: 15%;" *matHeaderCellDef mat-sort-header> Código do Produto </th>
+                <td mat-cell style="width: 15%;" *matCellDef="let row"> {{row.codigoProduto}} </td>
+              </ng-container>
+
+              <ng-container matColumnDef="DescricaoProduto">
+                <th mat-header-cell style="width: 20%;" *matHeaderCellDef mat-sort-header> Descrição do Produto </th>
+                <td mat-cell style="width: 20%;" *matCellDef="let row"> {{row.produtoCosif.produto.descricao}} </td>
+              </ng-container>
+
+              <ng-container matColumnDef="Descricao">
+                <th mat-header-cell style="width: 15%;" *matHeaderCellDef mat-sort-header> Descrição </th>
+                <td mat-cell style="width: 15%;" *matCellDef="let row"> {{row.descricao}} </td>
+              </ng-container>
+
+              <ng-container matColumnDef="Valor">
+                <th mat-header-cell style="width: 10%;" *matHeaderCellDef mat-sort-header> Valor </th>
+                <td mat-cell style="width: 10%;" *matCellDef="let row"> {{row.valor}} </td>
+              </ng-container>
+
+              <ng-container matColumnDef="ConsultarDados">
+                <th mat-header-cell style="width: 5%;" *matHeaderCellDef mat-sort-header></th>
+                <td mat-cell style="width: 5%;" *matCellDef="let row"> 
+                  <button mat-mini-fab color="primary" matTooltip="Visualizar" matTooltipPosition="right" matTooltipHideDelay="100" (click)="visualizarRegistro(row.mes, row.ano, row.numeroLancamento, row.codigoProduto, template)">
+                    <mat-icon>text_snippet</mat-icon>
+                  </button>
+                </td>
+              </ng-container>
+
+              <ng-container matColumnDef="DeletarRegistro">
+                <th mat-header-cell style="width: 10%;" *matHeaderCellDef mat-sort-header></th>
+                <td mat-cell style="width: 10%;" *matCellDef="let row"> 
+                  <button mat-mini-fab class="deletar" matTooltip="Excluir" matTooltipPosition="right" matTooltipHideDelay="100" (click)="visualizarRegistro(row.mes, row.ano, row.numeroLancamento, row.codigoProduto, templateExclusao)">
+                    <mat-icon>clear</mat-icon>
+                  </button>
+                </td>
+              </ng-container>
+          
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          
+              <tr class="mat-row" *matNoDataRow>
+                <td class="mat-cell" colspan="4">Sem Registros "{{input.value}}"</td>
+              </tr>
+            </table>
+          
+            <mat-paginator [pageSizeOptions]="[5, 10]"></mat-paginator>
+          </div>
+
+
+
+    </mat-expansion-panel>
+</mat-accordion>

@@ -1,0 +1,130 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Desenvolvimento\\Sinqia\\Movimentos_Manuais\\src\\2-Driven\\MovimentosManuais.Infra.Repository\\MovimentosManuais.Infra.Repository.csproj": {}
+  },
+  "projects": {
+    "E:\\Desenvolvimento\\Sinqia\\Movimentos_Manuais\\src\\1-Core\\MovimentosManuais.Domain\\MovimentosManuais.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Desenvolvimento\\Sinqia\\Movimentos_Manuais\\src\\1-Core\\MovimentosManuais.Domain\\MovimentosManuais.Domain.csproj",
+        "projectName": "MovimentosManuais.Domain",
+        "projectPath": "E:\\Desenvolvimento\\Sinqia\\Movimentos_Manuais\\src\\1-Core\\MovimentosManuais.Domain\\MovimentosManuais.Domain.csproj",
+        "packagesPath": "C:\\Users\\hentz\\.nuget\\packages\\",
+        "outputPath": "E:\\Desenvolvimento\\Sinqia\\Movimentos_Manuais\\src\\1-Core\\MovimentosManuais.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hentz\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Desenvolvimento\\Sinqia\\Movimentos_Manuais\\src\\2-Driven\\MovimentosManuais.Infra.Repository\\MovimentosManuais.Infra.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Desenvolvimento\\Sinqia\\Movimentos_Manuais\\src\\2-Driven\\MovimentosManuais.Infra.Repository\\MovimentosManuais.Infra.Repository.csproj",
+        "projectName": "MovimentosManuais.Infra.Repository",
+        "projectPath": "E:\\Desenvolvimento\\Sinqia\\Movimentos_Manuais\\src\\2-Driven\\MovimentosManuais.Infra.Repository\\MovimentosManuais.Infra.Repository.csproj",
+        "packagesPath": "C:\\Users\\hentz\\.nuget\\packages\\",
+        "outputPath": "E:\\Desenvolvimento\\Sinqia\\Movimentos_Manuais\\src\\2-Driven\\MovimentosManuais.Infra.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hentz\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "E:\\Desenvolvimento\\Sinqia\\Movimentos_Manuais\\src\\1-Core\\MovimentosManuais.Domain\\MovimentosManuais.Domain.csproj": {
+                "projectPath": "E:\\Desenvolvimento\\Sinqia\\Movimentos_Manuais\\src\\1-Core\\MovimentosManuais.Domain\\MovimentosManuais.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
