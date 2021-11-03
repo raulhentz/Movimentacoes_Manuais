@@ -17,3 +17,5 @@
     --> 4-Tests: Aqui está o projeto utilizado para realizar os testes unitários e comportamentais. 
 
 ### As funcionalidades incluídas no projeto, permite ao usuário incluir, visualizar e excluir uma determinada Movimentação, assim como especificado em documentação.
+
+### Para que o projeto rode, é necessário executar o comando "npm-install" dentro do projeto Angular (ClientApp) para baixar as dependências do projeto.
