@@ -1,4 +1,4 @@
-## Projeto de Teste - SINQIA - Movimentos Manuais
+## Projeto modelo - Movimentos Manuais
 
 ### Projeto implementado nas sequintes tecnologias:
 
